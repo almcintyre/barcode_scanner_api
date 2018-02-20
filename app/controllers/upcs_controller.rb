@@ -9,7 +9,7 @@ class UpcsController < ApplicationController
  # POST /todos
  def create
    @upc = Upc.create!(upc_params)
-   json_response(@upc, :created)
+   head :no_content
  end
 
  # GET /todos/:id

@@ -19,7 +19,6 @@
       </form>
     <script type='text/javascript'>
         $("#upcForm").submit(function(event) {
-          event.preventDefault();
           var $form = $( this ),
               url = $form.attr( 'action' );
           var posting = $.post( url, { upc: $('#upc').val(), product_name: $('#product_name').val() } );
